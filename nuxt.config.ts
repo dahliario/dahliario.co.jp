@@ -2,6 +2,7 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
+	target: 'static',
 	//...
 	build: {
 		transpile: ['vuetify'],
@@ -22,5 +23,6 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+	devtools: { enabled: true },
 });
 
